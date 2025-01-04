@@ -1,0 +1,134 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+
+    <form>
+      <label for="first-name">Name*</label>
+      <div class="name-field">
+        
+        <div class="input-container">
+          <input type="text" id="first-name" name="first-name" required>
+          <span class="subscript">First</span>
+        </div>
+        <div class="input-container">
+          <input type="text" id="last-name" name="last-name" required>
+          <span class="subscript">Last</span>
+        </div>
+      </div><br><br>
+      <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required>
+          <br><br>
+        <!-- Experience with Star Rating -->
+        <label for="experience">Your Experience*</label>
+        <div class="stars">
+          <input type="hidden" id="star1" name="experience" value="1"><label for="star1" class="star">&#9733;</label>
+          <input type="hidden" id="star2" name="experience" value="2"><label for="star2" class="star">&#9733;</label>
+          <input type="hidden" id="star3" name="experience" value="3"><label for="star3" class="star">&#9733;</label>
+          <input type="hidden" id="star4" name="experience" value="4"><label for="star4" class="star">&#9733;</label>
+          <input type="hidden"  id="star5" name="experience" value="5"><label for="star5" class="star">&#9733;</label>
+          <p>Overall, how would you rate your experience with us?</p>
+      </div>
+        <br><br>
+          
+      <!-- Section 1: How Satisfied Are You With... -->
+      <div style="margin-bottom: 30px;">
+        <h3 style="color: black;">How satisfied are you with*</h3>
+        
+        <!-- Satisfaction with Product -->
+          <div style="margin-bottom: 20px;">
+            <label for="product" style="font-size: 18px; font-weight: bold; display: block; margin-bottom: 10px;"> Purchase</label>
+            <div style="display: flex; justify-content: space-between;">
+              
+              <label style="flex: 1; text-align: center;"><input type="radio" name="product" value="very_Unsatisfied">Very Unsatisfied</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="product" value="Unsatisfied">Unsatisfied</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="product" value="neutral">Neutral</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="product" value="satisfied">Satisfied</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="product" value="very_satisfied" required>Very Satisfied</label>
+              </div>
+          </div>
+
+          <!-- Satisfaction with Customer Support -->
+          <div style="margin-bottom: 20px;">
+            <label for="support" style="font-size: 18px; font-weight: bold; display: block; margin-bottom: 10px;">Service</label>
+            <div style="display: flex; justify-content: space-between;">
+              <label style="flex: 1; text-align: center;"><input type="radio" name="product" value="very_Unsatisfied">Very Unsatisfied</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="product" value="Unsatisfied">Unsatisfied</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="product" value="neutral">Neutral</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="product" value="satisfied">Satisfied</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="product" value="very_satisfied" required>Very Satisfied</label>
+            </div>
+          </div>
+          
+          <!-- Satisfaction with Overall Experience -->
+          <div style="margin-bottom: 20px;">
+            <label for="experience" style="font-size: 18px; font-weight: bold; display: block; margin-bottom: 10px;">Company Overall     </label>
+            <div style="display: flex; justify-content: space-between;">
+              <label style="flex: 1; text-align: center;"><input type="radio" name="product" value="very_Unsatisfied">Very Unsatisfied</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="product" value="Unsatisfied">Unsatisfied</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="product" value="neutral">Neutral</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="product" value="satisfied">Satisfied</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="product" value="very_satisfied" required>Very Satisfied</label>
+            </div>
+          </div>
+      </div>
+
+      <!-- Section 2: How Likely Are You To... -->
+      <div style="margin-bottom: 30px;">
+        <h3 style="color:black;">How likely are you to*</h3>
+        
+          <!-- Buy again -->
+          <div style="margin-bottom: 20px;">
+            <label for="recommend" style="font-size: 18px; font-weight: bold; display: block; margin-bottom: 10px;">Buy from us again    </label>
+            <div style="display: flex; justify-content: space-between;">
+              <label style="flex: 1; text-align: center;"><input type="radio" name="recommend" value="very_unlikely">Very Unlikely</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="recommend" value="unlikely">Unlikely</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="recommend" value="neutral">Neutral</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="recommend" value="likely">Likely</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="recommend" value="very_likely" required>Very Likely</label>
+              
+            </div>
+          </div>
+
+          <!-- recommend product -->
+          <div style="margin-bottom: 20px;">
+            <label for="purchase_again" style="font-size: 18px; font-weight: bold; display: block; margin-bottom: 10px;">Recommend our product to others</label>
+            <div style="display: flex; justify-content: space-between;">
+              <label style="flex: 1; text-align: center;"><input type="radio" name="recommend" value="very_unlikely">Very Unlikely</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="recommend" value="unlikely">Unlikely</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="recommend" value="neutral">Neutral</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="recommend" value="likely">Likely</label>
+              <label style="flex: 1; text-align: center;"><input type="radio" name="recommend" value="very_likely" required>Very Likely</label>
+                        </div>
+          </div>
+          
+            <!-- recommend company -->
+        <div style="margin-bottom: 20px;">
+          <label for="purchase_again" style="font-size: 18px; font-weight: bold; display: block; margin-bottom: 10px;">Recommend our Company to others</label>
+          <div style="display: flex; justify-content: space-between;">
+          <label style="flex: 1; text-align: center;"><input type="radio" name="recommend" value="very_unlikely">Very Unlikely</label>
+          <label style="flex: 1; text-align: center;"><input type="radio" name="recommend" value="unlikely">Unlikely</label>
+          <label style="flex: 1; text-align: center;"><input type="radio" name="recommend" value="neutral">Neutral</label>
+          <label style="flex: 1; text-align: center;"><input type="radio" name="recommend" value="likely">Likely</label>
+          <label style="flex: 1; text-align: center;"><input type="radio" name="recommend" value="very_likely" required>Very Likely</label>
+          </div>
+        </div>
+
+      
+  <br><br>
+        <!-- Comments Section -->
+        <h4><label for="comments">Additional Comments or suggestions</label></h4>
+        <textarea id="comments" name="comments"></textarea><br><br>
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+      </form>
+
+  </body>
+  </html>
